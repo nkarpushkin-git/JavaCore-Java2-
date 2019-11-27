@@ -15,8 +15,7 @@ public class MainReg {
     }
 
     public static boolean find (String str) {
-//        Pattern pattern = Pattern.compile(".*\\d.*${4,20}");
-        Pattern pattern = Pattern.compile("\\d|[a-z]|[A-Z]|.\\S{8,20}");
+        Pattern pattern = Pattern.compile("\\d|[a-z]|[A-Z]|\\S{8,20}");
         Matcher matcher = pattern.matcher(str);
 
         return matcher.matches();
